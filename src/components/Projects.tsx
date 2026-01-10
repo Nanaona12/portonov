@@ -1,15 +1,32 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
+
+const pmImages = import.meta.glob(
+  "@/assets/projectimage/pm/*.png",
+  { eager: true, import: "default" }
+);
+
+const sipoinImages = import.meta.glob(
+  "@/assets/projectimage/sipoin/*.png",
+  { eager: true, import: "default" }
+);
+
+const ieltsImages = import.meta.glob(
+  "@/assets/projectimage/ieltshub/*.png",
+  { eager: true, import: "default" }
+);
+const project1 = Object.values(pmImages)[0] as string;
+const project2 = Object.values(sipoinImages)[0] as string;
+const project3 = Object.values(ieltsImages)[0] as string;
+
 
 export const Projects = () => {
   const projects = [
     {
       id: "1",
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with 3D product visualization, real-time inventory, and advanced analytics.",
+      title: "Project Management Platform",
+      description: "Project management platform web  untuk pemantauan proyek secara real-time dan kolaborasi tim.",
       image: project1,
       technologies: ["React", "Node.js", "Three.js", "PostgreSQL"],
       liveUrl: "#",
@@ -26,10 +43,15 @@ export const Projects = () => {
     },
     {
       id: "3",
-      title: "3D Portfolio Website",
-      description: "Interactive portfolio website featuring WebGL animations and immersive 3D experiences.",
-      image: project1,
-      technologies: ["Three.js", "React", "GSAP", "Blender"],
+      title: "IELTS Hub",
+      description: "Platform pembelajaran dan latihan IELTS berbasis web dengan sistem materi, latihan soal, dan evaluasi.",
+      image: project3,
+      technologies: ["React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "REST API",
+        "MySQL"],
       liveUrl: "#",
       githubUrl: "#"
     }

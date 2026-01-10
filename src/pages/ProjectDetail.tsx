@@ -6,9 +6,6 @@ import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-
 const ProjectDetail = () => {
   const { id } = useParams();
   useScrollAnimation();
@@ -17,7 +14,7 @@ const ProjectDetail = () => {
 
 const projectImages = {
   ecommerce: Object.values(
-    import.meta.glob('/src/assets/projectimage/ecommerce/*.png', {
+    import.meta.glob('/src/assets/projectimage/pm/*.png', {
       eager: true,
       import: 'default',
     })
@@ -41,34 +38,51 @@ const projectImages = {
   const projectsData = [
     {
       id: "1",
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with 3D product visualization, real-time inventory, and advanced analytics.",
-      longDescription: "A comprehensive e-commerce platform built with modern web technologies. This project features real-time product visualization using Three.js, allowing customers to view products in 3D before purchasing. The platform includes advanced analytics dashboard for merchants, real-time inventory management, secure payment processing, and responsive design optimized for all devices.",
+      title: "Project Management Platform",
+      description: "Platform manajemen proyek berbasis web untuk pemantauan proyek secara real-time dan kolaborasi tim.",
+      longDescription:
+        "Platform manajemen proyek komprehensif yang dirancang untuk mendukung pemantauan proyek secara real-time, pengelolaan tugas, dan kolaborasi tim yang efisien. Aplikasi web ini menyediakan dashboard interaktif, alur kerja tugas, analitik progres proyek, serta sistem akses berbasis peran untuk membantu tim mengelola proyek yang kompleks. Platform ini dibangun dengan fokus pada kemudahan penggunaan, skalabilitas, dan performa, sehingga cocok digunakan oleh berbagai jenis industri.",
+
       image: projectImages.ecommerce[0],
-      images: projectImages.ecommerce, 
-      technologies: ["React", "Node.js", "Three.js", "PostgreSQL", "Express", "Redux", "Stripe API", "AWS S3"],
+      images: projectImages.ecommerce,
+
+      technologies: [
+        "Pemantauan proyek dan tugas secara real-time",
+        "Kolaborasi tim dan log aktivitas",
+        "Dashboard proyek interaktif",
+        "Penugasan tugas dan pemantauan progres",
+        "Sistem akses berbasis peran (Role-based Access Control)",
+        "Desain responsif untuk berbagai perangkat"
+      ],
+
       liveUrl: "#",
       githubUrl: "#",
-      duration: "6 months",
-      team: "4 developers",
-      role: "Full-stack Developer & UI/UX Designer",
+
+      duration: "1 months",
+      team: "1 developers",
+      role: "Full-stack Developer ",
+
       challenges: [
-        "Implementing real-time 3D product visualization",
-        "Optimizing performance for large product catalogs", 
-        "Building scalable microservices architecture"
+        "Mengimplementasikan pembaruan proyek secara real-time menggunakan WebSocket",
+        "Merancang dashboard yang intuitif untuk menampilkan data proyek yang kompleks",
+        "Mengoptimalkan performa aplikasi untuk menangani data proyek dan tugas dalam jumlah besar",
+        "Menerapkan sistem hak akses dan peran pengguna secara aman"
       ],
+
       features: [
-        "3D Product Viewer with WebGL",
-        "Real-time Inventory Management",
-        "Advanced Analytics Dashboard",
-        "Secure Payment Processing",
-        "Multi-vendor Support",
-        "Mobile-first Responsive Design"
+        "Pemantauan proyek dan tugas secara real-time",
+        "Kolaborasi tim dan log aktivitas",
+        "Dashboard proyek interaktif",
+        "Penugasan tugas dan pemantauan progres",
+        "Sistem akses berbasis peran (Role-based Access Control)",
+        "Desain responsif untuk berbagai perangkat"
       ],
+
       achievements: [
-        "Reduced cart abandonment by 35%",
-        "Improved user engagement by 60%",
-        "Successfully handled 10k+ concurrent users"
+        "Meningkatkan transparansi dan visibilitas proyek bagi seluruh anggota tim",
+        "Mengurangi keterlambatan proyek melalui pemantauan real-time",
+        "Meningkatkan produktivitas dan efektivitas kolaborasi tim",
+        "Berhasil mendukung pengelolaan banyak proyek secara bersamaan"
       ]
     },
     {
@@ -132,8 +146,8 @@ const projectImages = {
       liveUrl: "#",
       githubUrl: "#",
       duration: "4 months",
-      team: "2 developers",
-      role: "Frontend Developer",
+      team: "1 developers",
+      role: "Fullstack Developer",
       challenges: [
         "Menyusun struktur materi yang mudah dipahami",
         "Membuat UI yang nyaman untuk belajar jangka panjang",
