@@ -63,8 +63,8 @@ export const Hero = () => {
         {/* Social Links */}
         <div className="flex justify-center space-x-6 mb-12 animate-on-scroll">
           {[
-            { Icon: Github, href: "https://github.com" },
-            { Icon: Linkedin, href: "https://www.linkedin.com/in/noviona-marathus-sholihah-19a46b197/" },
+            { Icon: Github, href: "https://github.com/Nanaona12" },
+            { Icon: Linkedin, href: "https://www.linkedin.com/in/novionams/" },
             { Icon: Mail, href: "mailto:nmarathuss@gmail.com" }
           ].map(({ Icon, href }, i) => (
             <a key={i} href={href} target="_blank" rel="noopener noreferrer"
