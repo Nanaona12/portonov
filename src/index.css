@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3D Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Dark theme as primary */
+    --background: 222 84% 4%;
+    --foreground: 210 40% 98%;
+
+    /* Glass morphism cards */
+    --card: 220 27% 8%;
+    --card-foreground: 210 40% 98%;
+    --card-glass: 220 27% 12%;
+    --card-border: 220 27% 18%;
+
+    /* Blue Pink Black Theme */
+    --primary: 220 91% 60%;
+    --primary-glow: 220 91% 75%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 330 81% 60%;
+    --secondary-glow: 330 91% 75%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Tertiary accent for variety */
+    --tertiary: 200 100% 70%;
+    --tertiary-glow: 200 100% 85%;
+
+    /* Muted tones */
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 220 91% 60%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Borders and inputs */
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 220 91% 60%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-hero: radial-gradient(ellipse at center, hsl(var(--primary) / 0.3), transparent 70%);
+    --gradient-card: linear-gradient(135deg, hsl(var(--card-glass) / 0.8), hsl(var(--card-glass) / 0.4));
+    
+    /* 3D Shadows */
+    --shadow-3d: 0 20px 40px -12px hsl(var(--primary) / 0.3);
+    --shadow-glow: 0 0 60px hsl(var(--primary-glow) / 0.4);
+    --shadow-card: 0 8px 32px hsl(220 27% 4% / 0.5);
+    --shadow-floating: 0 25px 50px -12px hsl(var(--primary) / 0.25);
+
+    --radius: 1rem;
+
+    /* Animation variables */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* 3D Perspective Container */
+  .perspective-container {
+    perspective: 1000px;
+    perspective-origin: center center;
+  }
+
+  /* Floating Animation */
+  .floating {
+    animation: floating 6s ease-in-out infinite;
+  }
+
+  .floating-delayed {
+    animation: floating 6s ease-in-out infinite;
+    animation-delay: -2s;
+  }
+
+  .floating-slow {
+    animation: floating 8s ease-in-out infinite;
+    animation-delay: -4s;
+  }
+
+  /* 3D Card Hover Effects */
+  .card-3d {
+    transform-style: preserve-3d;
+    transition: var(--transition-smooth);
+  }
+
+  .card-3d:hover {
+    transform: rotateY(5deg) rotateX(5deg) translateZ(20px);
+  }
+
+  /* Glassmorphism Effect */
+  .glass {
+    background: var(--gradient-card);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--card-border));
+  }
+
+  /* Glow Effects */
+  .glow-primary {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .glow-on-hover:hover {
+    box-shadow: var(--shadow-glow);
+    transition: var(--transition-smooth);
+  }
+
+  /* Text Gradient */
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Hero Background Animation */
+  .hero-bg {
+    background: var(--gradient-hero);
+    animation: pulse-glow 4s ease-in-out infinite alternate;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes floating {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0% { opacity: 0.5; }
+  100% { opacity: 0.8; }
+}
+
+@keyframes rotate-3d {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+@keyframes slide-in-3d {
+  0% {
+    opacity: 0;
+    transform: translateZ(-100px) rotateX(-15deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0) rotateX(0deg);
+  }
+}
+
+/* Scroll-triggered animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
