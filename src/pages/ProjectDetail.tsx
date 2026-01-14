@@ -39,20 +39,20 @@ const projectImages = {
     {
       id: "1",
       title: "Project Management Platform",
-      description: "Platform manajemen proyek berbasis web untuk pemantauan proyek secara real-time dan kolaborasi tim.",
+      description: "A web-based project management platform for real-time project monitoring and team collaboration.",
       longDescription:
-        "Platform manajemen proyek komprehensif yang dirancang untuk mendukung pemantauan proyek secara real-time, pengelolaan tugas, dan kolaborasi tim yang efisien. Aplikasi web ini menyediakan dashboard interaktif, alur kerja tugas, analitik progres proyek, serta sistem akses berbasis peran untuk membantu tim mengelola proyek yang kompleks. Platform ini dibangun dengan fokus pada kemudahan penggunaan, skalabilitas, dan performa, sehingga cocok digunakan oleh berbagai jenis industri.",
+        "Comprehensive project management platform designed to support real-time project monitoring, task management, and efficient team collaboration. This web application provides an interactive dashboard, task workflows, project progress analytics, and role-based access control systems to help teams manage complex projects. Built with a focus on usability, scalability, and performance, this platform is suitable for various industries.",
 
       image: projectImages.ecommerce[0],
       images: projectImages.ecommerce,
 
       technologies: [
-        "Pemantauan proyek dan tugas secara real-time",
-        "Kolaborasi tim dan log aktivitas",
-        "Dashboard proyek interaktif",
-        "Penugasan tugas dan pemantauan progres",
-        "Sistem akses berbasis peran (Role-based Access Control)",
-        "Desain responsif untuk berbagai perangkat"
+        "Real-time project and task monitoring",
+        "Team collaboration and activity logging",
+        "Interactive project dashboard",
+        "Task assignment and progress tracking",
+        "Role-based access control system",
+        "Responsive design for various devices"
       ],
 
       liveUrl: "#",
@@ -63,35 +63,35 @@ const projectImages = {
       role: "Full-stack Developer ",
 
       challenges: [
-        "Mengimplementasikan pembaruan proyek secara real-time menggunakan WebSocket",
-        "Merancang dashboard yang intuitif untuk menampilkan data proyek yang kompleks",
-        "Mengoptimalkan performa aplikasi untuk menangani data proyek dan tugas dalam jumlah besar",
-        "Menerapkan sistem hak akses dan peran pengguna secara aman"
+        "Implementing real-time project updates using WebSocket",
+        "Designing an intuitive dashboard to display complex project data",
+        "Optimizing application performance to handle large volumes of project and task data",
+        "Implementing a secure user access and role management system"
       ],
 
       features: [
-        "Pemantauan proyek dan tugas secara real-time",
-        "Kolaborasi tim dan log aktivitas",
-        "Dashboard proyek interaktif",
-        "Penugasan tugas dan pemantauan progres",
-        "Sistem akses berbasis peran (Role-based Access Control)",
-        "Desain responsif untuk berbagai perangkat"
+        "Real-time project and task monitoring",
+        "Team collaboration and activity logging",
+        "Interactive project dashboard",
+        "Task assignment and progress tracking",
+        "Role-based access control system",
+        "Responsive design for various devices"
       ],
 
       achievements: [
-        "Meningkatkan transparansi dan visibilitas proyek bagi seluruh anggota tim",
-        "Mengurangi keterlambatan proyek melalui pemantauan real-time",
-        "Meningkatkan produktivitas dan efektivitas kolaborasi tim",
-        "Berhasil mendukung pengelolaan banyak proyek secara bersamaan"
+        "Improved project transparency and visibility for all team members",
+        "Reduced project delays through real-time monitoring",
+        "Enhanced team productivity and collaboration effectiveness",
+        "Successfully supported management of multiple projects simultaneously"
       ]
     },
     {
       id: "2",
-      title: "SIPOIN (Sistem Pelanggaran Siswa)",
+      title: "SIPOIN (Student Violation Management System)",
       description:
-        "Sistem manajemen pelanggaran siswa berbasis web untuk pencatatan, monitoring, dan pelaporan secara terpusat.",
+        "A web-based student violation management system for centralized recording, monitoring, and reporting.",
       longDescription:
-        "SIPOIN adalah aplikasi berbasis web yang digunakan untuk mencatat dan memantau pelanggaran siswa secara terstruktur. Sistem ini membantu pihak sekolah dalam pengelolaan data pelanggaran, poin siswa, serta pembuatan laporan secara efisien. Aplikasi dikembangkan dengan fokus pada kemudahan penggunaan, performa, dan akurasi data.",
+        "SIPOIN is a web-based application designed to record and monitor student violations in a structured manner. The system helps schools manage violation data, student point records, and generate reports efficiently. The application was developed with a strong focus on usability, performance, and data accuracy.",
       image: projectImages.sipoin[0],
       images: projectImages.sipoin,
       technologies: [
@@ -105,34 +105,33 @@ const projectImages = {
       liveUrl: "#",
       githubUrl: "#",
       duration: "2 weeks",
-      team: "1 developers",
+      team: "1 developer",
       role: "Fullstack Web Developer",
       challenges: [
-        "Merancang alur pencatatan pelanggaran yang mudah digunakan",
-        "Optimasi performa query dan database",
-        "Sinkronisasi data antar role pengguna"
+        "Designing an easy-to-use violation reporting workflow",
+        "Optimizing database queries and overall performance",
+        "Synchronizing data across different user roles"
       ],
       features: [
-        "Manajemen data siswa dan pelanggaran",
-        "Sistem poin pelanggaran otomatis",
-        "Role-based access (Admin, Guru, Wali)",
-        "Laporan dan rekap data pelanggaran",
-        "Dashboard monitoring pelanggaran"
+        "Student and violation data management",
+        "Automatic violation point system",
+        "Role-based access control (Admin, Teacher, Guardian)",
+        "Violation reports and data recaps",
+        "Violation monitoring dashboard"
       ],
       achievements: [
-        "Mempercepat proses rekap pelanggaran siswa",
-        "Mengurangi kesalahan pencatatan manual",
-        "Meningkatkan efisiensi administrasi sekolah"
+        "Accelerated the student violation recap process",
+        "Reduced errors caused by manual record-keeping",
+        "Improved the efficiency of school administrative processes"
       ]
-    }
-,
+    },
     {
       id: "3",
       title: "IELTS Hub",
       description:
-        "Platform pembelajaran dan latihan IELTS berbasis web dengan sistem materi, latihan soal, dan evaluasi.",
+        "A web-based IELTS learning and practice platform featuring structured materials, practice questions, and evaluation.",
       longDescription:
-        "IELTS Hub adalah platform edukasi berbasis web yang dirancang untuk membantu siswa mempersiapkan tes IELTS. Aplikasi ini menyediakan materi pembelajaran, latihan soal, serta sistem evaluasi untuk mengukur perkembangan kemampuan pengguna. Fokus utama pengembangan adalah pengalaman belajar yang interaktif dan terstruktur.",
+        "IELTS Hub is a web-based educational platform designed to help learners prepare for the IELTS exam. The application provides structured learning materials, practice questions, and an evaluation system to track user progress. The main focus of development was delivering an interactive and well-organized learning experience.",
       image: projectImages.ieltshub[0],
       images: projectImages.ieltshub,
       technologies: [
@@ -146,26 +145,27 @@ const projectImages = {
       liveUrl: "#",
       githubUrl: "#",
       duration: "4 months",
-      team: "1 developers",
+      team: "1 developer",
       role: "Fullstack Developer",
       challenges: [
-        "Menyusun struktur materi yang mudah dipahami",
-        "Membuat UI yang nyaman untuk belajar jangka panjang",
-        "Optimasi performa halaman dan state management"
+        "Designing a clear and easy-to-understand learning content structure",
+        "Creating a comfortable UI for long-term learning sessions",
+        "Optimizing page performance and state management"
       ],
       features: [
-        "Manajemen materi IELTS",
-        "Latihan soal berbasis kategori",
-        "Progress tracking pengguna",
-        "UI responsif dan modern",
-        "Pengelolaan data pengguna"
+        "IELTS content and material management",
+        "Category-based practice questions",
+        "User progress tracking",
+        "Modern and responsive UI",
+        "User data management"
       ],
       achievements: [
-        "Meningkatkan engagement pengguna",
-        "Mendukung proses belajar mandiri",
-        "UI konsisten dan mudah digunakan"
+        "Increased user engagement",
+        "Supported independent learning processes",
+        "Delivered a consistent and user-friendly interface"
       ]
     }
+
 
   ];
 

@@ -8,7 +8,7 @@ const awards = [
     organization: "Telkomsel IndonesiaNEXT",
     date: "2024",
     category: "Talent Recognition",
-    description: "Terpilih sebagai salah satu dari 1000 talenta terbaik di Indonesia dalam program IndonesiaNEXT Season 8, kompetisi talent nasional yang diselenggarakan oleh Telkomsel.",
+    description: "Selected as one of the top 1,000 talents nationwide in IndonesiaNEXT Season 8.",
     achievement: "Best 1000 Talent",
     icon: Trophy
   },
@@ -17,16 +17,16 @@ const awards = [
     organization: "Telkomsel IndonesiaNEXT",
     date: "2023",
     category: "Talent Recognition",
-    description: "Terpilih sebagai salah satu dari 2000 talenta terbaik di Indonesia dalam program IndonesiaNEXT Season 7.",
+    description: "Selected as one of the top 2,000 talents nationwide in IndonesiaNEXT Season 7.",
     achievement: "Best 2000 Talent",
     icon: Star
   },
   {
-    title: "Publikasi Seminar Diseminasi ITENAS",
+    title: "ITENAS Dissemination Seminar Publication",
     organization: "Institut Teknologi Nasional Bandung",
     date: "2024",
     category: "Research Publication",
-    description: "Mempublikasikan studi komparatif mengenai performa YOLOv9–YOLOv11 pada Seminar Diseminasi ITENAS.",
+    description: "Published a comparative study on the performance of YOLOv9–YOLOv11 at the ITENAS Dissemination Seminar.",
     achievement: "Research Publication",
     icon: Trophy
   }
@@ -40,10 +40,10 @@ export const Awards = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">
-            Penghargaan & Pencapaian
+            Awards & Achievements
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Pengakuan dan pencapaian sepanjang perjalanan profesional saya
+            Recognition and achievements throughout my professional journey
           </p>
         </div>
 

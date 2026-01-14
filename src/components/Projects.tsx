@@ -26,7 +26,7 @@ export const Projects = () => {
     {
       id: "1",
       title: "Project Management Platform",
-      description: "Project management platform web  untuk pemantauan proyek secara real-time dan kolaborasi tim.",
+      description: "A web-based project management platform for real-time project monitoring and team collaboration.",
       image: project1,
       technologies: ["React", "Node.js", "Three.js", "PostgreSQL"],
       liveUrl: "#",
@@ -34,8 +34,8 @@ export const Projects = () => {
     },
     {
       id: "2",
-      title: "Sistem Pelanggaran Siswa (SIPOIN)",
-      description: "Sistem pelanggaran siswa berbasis web yang memungkinkan pengelolaan data pelanggaran secara efisien dan transparan.",
+      title: "Sistem Pelanggaran Siswa (SIPOIN) / Student Violation Management System",
+      description: "A web-based student violation management system that enables efficient and transparent handling of student disciplinary data.",
       image: project2,
       technologies: ["React", "Supabase", "TypeScript"],
       liveUrl: "#",
@@ -44,7 +44,7 @@ export const Projects = () => {
     {
       id: "3",
       title: "IELTS Hub",
-      description: "Platform pembelajaran dan latihan IELTS berbasis web dengan sistem materi, latihan soal, dan evaluasi.",
+      description: "A web-based IELTS learning and practice platform featuring structured materials, practice tests, and evaluation tools.",
       image: project3,
       technologies: ["React",
         "TypeScript",

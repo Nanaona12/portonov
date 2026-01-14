@@ -50,10 +50,10 @@ export const Contact = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-5xl font-bold mb-6">
-            <span className="text-gradient">Hubungi Saya</span>
+            <span className="text-gradient">Contact Me !!!</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Siap untuk mewujudkan ide Anda? Mari diskusikan proyek Anda berikutnya
+            Ready to bring your ideas to life? Let’s discuss your next project.
           </p>
         </div>
 
@@ -63,10 +63,10 @@ export const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium">Nama</label>
+                  <label htmlFor="name" className="text-sm font-medium">Name</label>
                   <Input
                     id="name"
-                    placeholder="Nama Anda"
+                    placeholder="Your Name"
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                     className="glass border-card-border focus:border-primary/50 transition-colors duration-300"
@@ -77,7 +77,7 @@ export const Contact = () => {
                   <Input
                     id="email"
                     type="email"
-                    placeholder="email@contoh.com"
+                    placeholder="blablabla@gmail.com"
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                     className="glass border-card-border focus:border-primary/50 transition-colors duration-300"
@@ -86,10 +86,10 @@ export const Contact = () => {
               </div>
               
               <div className="space-y-2">
-                <label htmlFor="subject" className="text-sm font-medium">Subjek</label>
+                <label htmlFor="subject" className="text-sm font-medium">Subject</label>
                 <Input
                   id="subject"
-                  placeholder="Diskusi Proyek"
+                  placeholder="Project Discussion"
                   value={formData.subject}
                   onChange={(e) => setFormData({...formData, subject: e.target.value})}
                   className="glass border-card-border focus:border-primary/50 transition-colors duration-300"
@@ -97,10 +97,10 @@ export const Contact = () => {
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium">Pesan</label>
+                <label htmlFor="message" className="text-sm font-medium">Message</label>
                 <Textarea
                   id="message"
-                  placeholder="Ceritakan tentang proyek Anda..."
+                  placeholder="Tell me about your project..."
                   rows={6}
                   value={formData.message}
                   onChange={(e) => setFormData({...formData, message: e.target.value})}
@@ -110,7 +110,7 @@ export const Contact = () => {
 
               <Button type="submit" variant="hero" size="lg" className="w-full">
                 <Send className="w-4 h-4 mr-2" />
-                Kirim Pesan
+                Send Message
               </Button>
             </form>
           </div>

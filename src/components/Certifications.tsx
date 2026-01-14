@@ -8,21 +8,21 @@ const certifications = [
     title: "Google Project Management Professional Certificate",
     issuer: "Google X Komdigi",
     date: "2025",
-    description: "Sertifikasi profesional dalam manajemen proyek yang mencakup metodologi Agile, Scrum, dan praktik terbaik dalam mengelola proyek.",
+    description: "Professional certification in project management covering Agile and Scrum methodologies, along with best practices for managing projects effectively.",
     skills: ["Project Management", "Agile", "Scrum", "Risk Management", "Stakeholder Communication"]
   },
   {
     title: "Linear Models in Machine Learning: Fundamentals, Applications, and Competition",
     issuer: "Yandex X Komdigi",
     date: "2025",
-    description: "Sertifikasi dalam Machine Learning dengan fokus pada model linear, aplikasi praktis, dan implementasi dalam kompetisi.",
+    description: "Machine learning certification focused on linear models, practical applications, and competition-based implementation.",
     skills: ["Machine Learning", "Linear Models", "Data Science", "Python", "Competition"]
   },
   {
     title: "Microsoft Office Specialist: Excel Associate (Office 2019)",
     issuer: "Microsoft",
     date: "2024",
-    description: "Sertifikasi resmi Microsoft yang menunjukkan kemahiran dalam Microsoft Excel termasuk analisis data, pivot tables, rumus lanjutan, dan teknik visualisasi.",
+    description: "Official Microsoft certification demonstrating proficiency in Microsoft Excel including data analysis, pivot tables, advanced formulas, and visualization techniques.",
     skills: ["Excel Advanced", "Data Analysis", "Pivot Tables", "VLOOKUP", "Data Visualization"]
   }
 ];
@@ -35,10 +35,10 @@ export const Certifications = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">
-            Sertifikasi
+            Certifications
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Sertifikasi profesional dan pencapaian pembelajaran berkelanjutan
+            Professional certifications and continuous learning achievements.
           </p>
         </div>
 

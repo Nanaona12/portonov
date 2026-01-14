@@ -9,8 +9,8 @@ const organizations = [
     organization: "I-WILL (Innovative Workingspace Integrated Living Laboratory) ITENAS",
     location: "Bandung, Indonesia",
     period: "Jul 2024 - Jan 2025",
-    description: "Membimbing dan mengawasi proyek R&D di bidang Teknologi Game, Robotika, dan IoT. Berkolaborasi dengan divisi R&D untuk mengevaluasi proposal penelitian serta menyeleksi tim proyek yang berpotensi.",
-    achievements: ["Membimbing proyek R&D", "Evaluasi proposal penelitian", "Mendukung perencanaan dan monitoring proyek"],
+    description: "Provided guidance and supervision for R&D projects in Game Technology, Robotics, and IoT. Collaborated with the R&D division to evaluate research proposals and select high-potential project teams. Assisted in planning and monitoring project progress to ensure alignment with objectives.",
+    achievements: ["Mentored Research and Development projects", "Evaluated research proposals", "Supported project planning and progress monitoring"],
     type: "Advisory"
   },
   {
@@ -18,8 +18,8 @@ const organizations = [
     organization: "Badan Eksekutif Keluarga Mahasiswa (BE-KM) ITENAS",
     location: "Bandung, Indonesia", 
     period: "Sep 2021 - Sep 2022",
-    description: "Mengelola penjadwalan dan dokumentasi lebih dari 20 rapat organisasi. Memimpin koordinasi acara mahasiswa tingkat kampus dengan rata-rata partisipasi 80%.",
-    achievements: ["Meningkatkan efektivitas komunikasi", "Menyusun rencana strategis tahunan", "Optimasi alokasi sumber daya hingga 15%"],
+    description: "Managed scheduling and documentation for more than 20 organizational meetings and led coordination of campus-wide student events with an average participation rate of 80%. Developed and implemented efficient administrative systems, improving information flow and team collaboration.",
+    achievements: ["Improved communication effectiveness", "Developed annual strategic plans", "Optimized resource allocation by up to 15%"],
     type: "Leadership"
   },
   {
@@ -27,8 +27,8 @@ const organizations = [
     organization: "Badan Eksekutif Keluarga Mahasiswa (BE-KM) ITENAS",
     location: "Bandung, Indonesia",
     period: "Aug 2020 - Aug 2021",
-    description: "Mengawasi pengelolaan keuangan untuk lebih dari 10 program organisasi, memastikan pelaporan transparan dan sesuai regulasi. Menyederhanakan proses pengadaan dan penyusunan anggaran.",
-    achievements: ["Efisiensi biaya sebesar 10%", "Pelaporan keuangan transparan", "Memperoleh pendanaan eksternal"],
+    description: "Supervised financial management for more than 10 organizational programs, ensuring transparent reporting and regulatory compliance. Simplified procurement and budgeting processes.",
+    achievements: ["Cost efficiency of 10%", "Transparent financial reporting", "Secured external sponsorship funding"],
     type: "Finance"
   },
   {
@@ -36,8 +36,8 @@ const organizations = [
     organization: "Himpunan Mahasiswa Informatika (HMIF) ITENAS",
     location: "Bandung, Indonesia",
     period: "Sep 2019 - Aug 2023",
-    description: "Berpartisipasi dalam berbagai program kerja HMIF. Terlibat dalam divisi Keuangan, Acara, dan Humas selama pelaksanaan kegiatan.",
-    achievements: ["Penyusunan proposal", "Koordinasi acara", "Pengelolaan administrasi"],
+    description: "Participated in various HMIF work programs. Involved in the Finance, Event, and Public Relations divisions during event implementation.",
+    achievements: ["Proposal preparation", "Event coordination", "Administrative support"],
     type: "Member"
   }
 ];

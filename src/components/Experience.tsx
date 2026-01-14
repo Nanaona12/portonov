@@ -5,12 +5,12 @@ import { Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    title: "Magang Fullstack Website Developer",
+    title: "Fullstack Website Developer Intern",
     company: "PT JARI Information Technology",
     location: "Bandung, Indonesia",
     period: "Aug 2023 - Dec 2023",
     description:
-      "Mengembangkan dan memelihara aplikasi web berbasis Laravel. Meningkatkan performa front-end menggunakan Bootstrap dan Vue.js, serta mengoptimalkan REST API, database indexing, dan caching hingga meningkatkan load time sebesar 30%. Berkolaborasi erat dengan tim UI/UX desain.",
+      "Developed and maintained Laravel-based web applications. Improved front-end performance using Bootstrap and Vue.js, and optimized REST APIs, database indexing, and caching, resulting in up to a 30% improvement in load time. Collaborated closely with the UI/UX design team.",
     technologies: [
       "Laravel",
       "PHP",
@@ -21,12 +21,12 @@ const experiences = [
     ]
   },
   {
-    title: "Koordinator Pengawas Ujian Informatika",
+    title: "Informatics Exam Supervisor Coordinator",
     company: "National Institute of Technology",
     location: "Bandung, Indonesia",
     period: "Mar 2022 - Jan 2025",
     description:
-      "Mengelola dan menjadwalkan lebih dari 30 sesi ujian per semester serta berkoordinasi dengan 15–20 pengawas. Berkomunikasi dengan 20+ dosen untuk memastikan kelancaran teknis ujian. Mengarsipkan laporan pengawasan dan absensi secara akurat menggunakan Google Workspace.",
+      "Managed and scheduled more than 30 exam sessions per semester and coordinated with 15-20 supervisors. Communicated with 20+ lecturers to ensure smooth technical exam operations. Accurately archived supervision and attendance reports using Google Workspace.",
     technologies: [
       "Google Workspace",
       "Coordination",
@@ -40,7 +40,7 @@ const experiences = [
     location: "Bandung, Indonesia",
     period: "Jul 2025 - Present",
     description:
-      "Mengajar dasar-dasar pemrograman Python kepada lebih dari 100 siswa SMA dengan metode pembelajaran berbasis proyek. Berkolaborasi dalam penyusunan dan penyesuaian materi, serta membimbing siswa dalam membangun aplikasi dan memahami berbagai algoritma Python.",
+      "Taught basic Python programming to more than 100 high school students using a project-based learning approach. Collaborated on curriculum development and guided students in building applications and understanding various Python algorithms.",
     technologies: [
       "Python",
       "Algorithms",
@@ -54,7 +54,7 @@ const experiences = [
     location: "Bandung, Indonesia",
     period: "Oct 2023 - Present",
     description:
-      "Mengelola proyek pengembangan website end-to-end untuk berbagai UMKM, mulai dari analisis kebutuhan, perancangan, pengembangan hingga deployment. Berkomunikasi langsung dengan klien untuk menetapkan timeline dan fitur, serta menangani beberapa proyek secara paralel dengan manajemen waktu yang baik.",
+      "Managed end-to-end website development projects for various MSMEs, from requirement analysis and system design to development and deployment. Communicated directly with clients to define timelines and features while handling multiple projects in parallel with effective time management.",
     technologies: [
       "Web Development",
       "Client Communication",

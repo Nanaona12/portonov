@@ -47,16 +47,15 @@ export const Hero = () => {
         </p>
         
         <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto animate-on-scroll">
-          Fresh graduate Teknik Informatika dengan minat pada Artificial Intelligence, 
-          Fullstack Development dan Project Management
+          Fresh graduate in Informatics Engineering with strong interests in Artificial Intelligence, Fullstack Development, and Project Management.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-on-scroll">
           <Button variant="hero" size="lg" onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
-            Lihat Portfolio
+            View Portfolio
           </Button>
           <Button variant="outline" size="lg" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
-            Hubungi Saya
+            Contact Me
           </Button>
         </div>
 
