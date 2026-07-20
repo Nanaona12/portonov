@@ -14,7 +14,9 @@ const Auth = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [displayName, setDisplayName] = useState("");
-  const { signIn, signUp, user } = useAuth();
+  const [showReset, setShowReset] = useState(false);
+  const [resetEmail, setResetEmail] = useState("");
+  const { signIn, signUp, resetPassword, user } = useAuth();
   const navigate = useNavigate();
   const { toast } = useToast();
 
@@ -63,6 +65,30 @@ const Auth = () => {
         title: "Account created!",
         description: "Please check your email to confirm your account."
       });
+    }
+    
+    setIsLoading(false);
+  };
+
+  const handleResetPassword = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    const { error } = await resetPassword(resetEmail);
+    
+    if (error) {
+      toast({
+        variant: "destructive",
+        title: "Error sending reset email",
+        description: error.message
+      });
+    } else {
+      toast({
+        title: "Reset link sent!",
+        description: "Please check your email for password reset instructions."
+      });
+      setShowReset(false);
+      setResetEmail("");
     }
     
     setIsLoading(false);
@@ -134,6 +160,18 @@ const Auth = () => {
                     "Sign In"
                   )}
                 </Button>
+                <div className="text-center">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setResetEmail(email);
+                      setShowReset(true);
+                    }}
+                    className="text-sm text-muted-foreground hover:text-foreground underline-offset-4 hover:underline transition-colors"
+                  >
+                    Forgot your password?
+                  </button>
+                </div>
               </form>
             </TabsContent>
             
@@ -189,6 +227,56 @@ const Auth = () => {
           </Tabs>
         </CardContent>
       </Card>
+
+      {showReset && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
+          <Card className="w-full max-w-md glass border-card-border">
+            <CardHeader>
+              <CardTitle>Reset Password</CardTitle>
+              <CardDescription>
+                Enter your email and we'll send you a link to reset your password.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <form onSubmit={handleResetPassword} className="space-y-4">
+                <div className="space-y-2">
+                  <Label htmlFor="reset-email">Email</Label>
+                  <Input
+                    id="reset-email"
+                    type="email"
+                    placeholder="Enter your email"
+                    value={resetEmail}
+                    onChange={(e) => setResetEmail(e.target.value)}
+                    required
+                    className="glass border-card-border"
+                  />
+                </div>
+                <div className="flex gap-2">
+                  <Button
+                    type="button"
+                    variant="outline"
+                    className="flex-1"
+                    onClick={() => setShowReset(false)}
+                    disabled={isLoading}
+                  >
+                    Cancel
+                  </Button>
+                  <Button type="submit" variant="hero" className="flex-1" disabled={isLoading}>
+                    {isLoading ? (
+                      <>
+                        <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      "Send Reset Link"
+                    )}
+                  </Button>
+                </div>
+              </form>
+            </CardContent>
+          </Card>
+        </div>
+      )}
     </div>
   );
 };
