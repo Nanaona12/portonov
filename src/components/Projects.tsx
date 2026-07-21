@@ -16,9 +16,16 @@ const ieltsImages = import.meta.glob(
   "@/assets/projectimage/ieltshub/*.png",
   { eager: true, import: "default" }
 );
+
+const dagangPintarImages = import.meta.glob(
+  "@/assets/projectimage/dagangpintar/*.png",
+  { eager: true, import: "default" }
+);
+
 const project1 = Object.values(pmImages)[0] as string;
 const project2 = Object.values(sipoinImages)[0] as string;
 const project3 = Object.values(ieltsImages)[0] as string;
+const project4 = Object.values(dagangPintarImages)[0] as string;
 
 
 export const Projects = () => {
@@ -54,7 +61,22 @@ export const Projects = () => {
         "MySQL"],
       liveUrl: "#",
       githubUrl: "#"
+    },
+    {
+      id: "4",
+      title: "Dagang Pintar",
+      description: "A web-based e-commerce platform for small businesses to manage their products and sales.",
+      image: project4,
+      technologies: ["React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "REST API",
+        "MySQL"],
+      liveUrl: "https://dagangpintar.app",
+      githubUrl: "#"
     }
+    
   ];
 
   return (
