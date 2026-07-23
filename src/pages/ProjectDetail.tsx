@@ -40,6 +40,13 @@ const projectImages = {
       import: 'default',
     })
   ) as string[],
+
+  fellasky: Object.values(
+    import.meta.glob('/src/assets/projectimage/fellasky/*.png', {
+      eager: true,
+      import: 'default',
+    })
+  ) as string[],
 };
 
   const projectsData = [
@@ -209,6 +216,45 @@ const projectImages = {
       achievements: [
         "Increased user engagement",
         "Supported independent learning processes",
+        "Delivered a consistent and user-friendly interface"
+      ]
+    },
+    {
+      id: "5",
+      title: "Fellasky Konveksi",
+      description:
+        "A web-based e-commerce platform for small businesses to manage their products and sales.",
+      longDescription:
+        "Fellasky Konveksi is a web-based e-commerce platform designed to help small businesses manage their products and sales efficiently. The application provides a user-friendly interface for product management, order processing, and inventory tracking. The main focus of development was delivering a seamless shopping experience for both businesses and customers.",
+      image: projectImages.fellasky[0],
+      images: projectImages.fellasky,
+      technologies: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "REST API",
+        "MySQL"
+      ],
+      liveUrl: "https://fellaskyproject.vercel.app",
+      githubUrl: "#",
+      duration: "2 months",
+      team: "1 developer",
+      role: "Fullstack Developer",
+      challenges: [
+        "Designing a clear and easy-to-understand management production structure",
+        "Creating a comfortable UI for long-term management sessions",
+        "Optimizing page performance and state management"
+      ],
+      features: [
+        "E-commerce functionality for small businesses",
+        "Product management and inventory tracking",
+        "Order processing and fulfillment",
+        "Modern and responsive UI",
+        "User data management"
+      ],
+      achievements: [
+        "Increased user engagement",
         "Delivered a consistent and user-friendly interface"
       ]
     }

@@ -21,7 +21,12 @@ const dagangPintarImages = import.meta.glob(
   "@/assets/projectimage/dagangpintar/*.png",
   { eager: true, import: "default" }
 );
+const fellaskyImages = import.meta.glob(
+  "@/assets/projectimage/fellasky/*.png",
+  { eager: true, import: "default" }
+);
 
+const project5 = Object.values(fellaskyImages)[0] as string;
 const project1 = Object.values(pmImages)[0] as string;
 const project2 = Object.values(sipoinImages)[0] as string;
 const project3 = Object.values(ieltsImages)[0] as string;
@@ -75,6 +80,20 @@ export const Projects = () => {
         "MySQL"],
       liveUrl: "https://dagangpintar.app",
       githubUrl: "#"
+    },
+    {
+      id: "5",
+      title: "Fellasky Konveksi",
+      description: "A web-based platform for managing and promoting textile products.",
+      image: project5,
+      technologies: ["React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "REST API",
+        "MySQL"],
+      liveUrl: "https://fellaskyproject.vercel.app",
+      githubUrl: "#"
     }
     
   ];
@@ -92,7 +111,9 @@ export const Projects = () => {
         </div>
 
         <div className="space-y-32">
-          {projects.map((project, i) => (
+          {[...projects]
+            .sort((projectA, projectB) => Number(projectB.id) - Number(projectA.id))
+            .map((project, i) => (
             <div 
               key={i} 
               className={`grid lg:grid-cols-2 gap-16 items-center ${i % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}

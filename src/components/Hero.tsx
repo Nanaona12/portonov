@@ -8,7 +8,7 @@ export const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden py-28 md:py-0">
       {/* Background */}
       <div 
         className="absolute inset-0 z-0"
@@ -33,20 +33,20 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
+      <div className="relative z-10 w-full text-center max-w-4xl mx-auto px-6">
         <div className="perspective-container">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-on-scroll">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl leading-tight font-bold mb-6 animate-on-scroll">
             <span className="text-gradient">Noviona Marathus</span>
             <br />
             <span className="text-foreground">Sholihah</span>
           </h1>
         </div>
         
-        <p className="text-xl md:text-2xl text-muted-foreground mb-4 animate-on-scroll">
+        <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-4 animate-on-scroll">
           AI Engineer • Fullstack Developer • Project Manager
         </p>
         
-        <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto animate-on-scroll">
+        <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto animate-on-scroll">
           Fresh graduate in Informatics Engineering with strong interests in Artificial Intelligence, Fullstack Development, and Project Management.
         </p>
 
@@ -73,16 +73,17 @@ export const Hero = () => {
           ))}
         </div>
 
-        {/* Scroll Indicator */}
-        <Button 
-          variant="ghost" 
-          size="icon"
-          onClick={scrollToNext}
-          className="floating absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        >
-          <ArrowDown className="w-6 h-6" />
-        </Button>
       </div>
+
+      {/* Scroll Indicator */}
+      <Button 
+        variant="ghost" 
+        size="icon"
+        onClick={scrollToNext}
+        className="floating absolute bottom-8 left-1/2 -translate-x-1/2"
+      >
+        <ArrowDown className="w-6 h-6" />
+      </Button>
     </section>
   );
 };

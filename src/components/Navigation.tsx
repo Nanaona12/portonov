@@ -23,9 +23,9 @@ export const Navigation = () => {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${
       isScrolled ? 'glass backdrop-blur-xl py-3' : 'py-6'
       }`}>
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-3">
           
-        <img src={logo} alt="logo" className="w-36 h-auto object-contain"/>
+        <img src={logo} alt="logo" className="w-28 sm:w-36 h-auto object-contain shrink-0"/>
 
         <div className="hidden md:flex items-center space-x-6">
           {['Home', 'About', 'Skills', 'Projects', 'Experience', 'Organizations', 'Certifications', 'Awards', 'Contact'].map((item) => (
@@ -40,7 +40,7 @@ export const Navigation = () => {
           ))}
         </div>
 
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center shrink-0">
           {/* <Button variant="ghost" size="sm" asChild>
             <Link to="/auth">
               <Settings className="w-4 h-4 mr-2" />
