@@ -9,10 +9,7 @@ export const About = () => {
               <span className="text-gradient">About Me</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I am a fresh graduate in Informatics Engineering with interests in Artificial Intelligence, 
-              Full-Stack Web Development, and Project Management. I have experience in developing web 
-              applications, managing projects, and coordinating teams, with a strong focus on delivering 
-              efficient, scalable, and high-quality solutions.
+              I am an Informatics Engineering professional with interests in Artificial Intelligence, Full-Stack Web Development, and Project Management. I have experience in developing web applications, managing projects, and coordinating teams, with a strong focus on delivering efficient, scalable, and high-quality solutions. I enjoy building innovative digital solutions while continuously improving my technical and leadership skills.
             </p>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">

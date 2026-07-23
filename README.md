@@ -20,7 +20,7 @@ AI Engineer • Fullstack Developer • Project Manager.
 
 ## 🧑‍💻 About
 
-Fresh graduate in **Teknik Informatika** with strong interest in:
+Graduated in **Teknik Informatika** with strong interest in:
 - Artificial Intelligence
 - Fullstack Development
 - Project Management
