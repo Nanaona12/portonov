@@ -1,10 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import heroBg from "@/assets/hero-bg-3d.jpg";
+import { generatePortfolioPdf } from "@/lib/pdf";
 
 export const Hero = () => {
   const scrollToNext = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleDownloadPortfolio = async () => {
+    await generatePortfolioPdf();
   };
 
   return (
@@ -53,6 +58,9 @@ export const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-on-scroll">
           <Button variant="hero" size="lg" onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
             View Portfolio
+          </Button>
+          <Button variant="outline" size="lg" onClick={handleDownloadPortfolio}>
+            Portofolio pdf
           </Button>
           <Button variant="outline" size="lg" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
             Contact Me
